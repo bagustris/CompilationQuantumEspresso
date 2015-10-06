@@ -1,0 +1,9 @@
+#=======================================
+# WANNIER90 	
+#=======================================
+
+F90=mpif90
+FCOPTS=$(FFLAGS) -x f95-cpp-input -fopenmp 
+LDOPTS= -g -pthread -fopenmp
+
+LIBS =  -L/opt/intel/composer_xe_2013.1.117/mkl/lib/intel64 -lmkl_gf_lp64  -lmkl_gnu_thread -lmkl_core 
